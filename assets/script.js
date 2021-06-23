@@ -11,8 +11,8 @@ let tie = 0;
 // make usre user only choses valid choice EDGE
 // TODO:random computer choice
 // list possible choices
-let compPool = ["r", "p", "s"];
-console.log(compPool);
+// let compPool = ["r", "p", "s"]; / started original pool as array, decided to use math.random() instead
+// console.log(compPool);
 // randomly select from list
 // store in variable
 let compChoice = Math.random();
@@ -57,6 +57,8 @@ console.log("computer choice " + compChoice);
 // let replay = window.confirm("Play again");
 // let replay = true
 // if (replay) {
+
+// merged original if/else statement into a do/while loop
   do {
     userChoice = prompt("Choose r, p, or s.");
     compChoice = Math.random();
