@@ -60,7 +60,11 @@ console.log("computer choice " + compChoice);
 
 // merged original if/else statement into a do/while loop
   do {
-    userChoice = prompt("Choose r, p, or s.");
+    userChoice = prompt("Choose r, p, or s.\r\n This selction is case sensitive.");
+    if(userChoice !== "r", "p", "s"){
+        alert("You must choose r, p, or s.\r\n This selection is case sensitive.")
+        userChoice = prompt("Choose r, p, or s.\r\n This selection is case sensitive.");
+    }
     compChoice = Math.random();
     console.log(compChoice);
     if (compChoice > 0.34) {
